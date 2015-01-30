@@ -1,0 +1,32 @@
+#include <iostream>
+#include <algorithm>
+using namespace std;
+int f(long long n)
+{
+	if(n>=101)
+	{
+	
+	return (n-10);
+	}
+	else
+	{
+	   return	f(f(n+11));
+	}
+	
+}
+
+int main()
+{
+	long long n;             // f91(500) = 490
+     while(cin>>n)
+     {
+     	if(n==0)
+     	break;
+     int x=	f(n);
+     cout<<"f91("<<n<<") = "<<x;
+     	cout<<endl;
+     }
+	 
+     	 	
+	return 0;
+}

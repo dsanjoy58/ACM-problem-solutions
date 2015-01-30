@@ -1,0 +1,31 @@
+#include <iostream>
+#include<algorithm>
+using namespace std;
+int main()
+{
+	int t,n,k,p,i=1;
+	cin>>t;
+	while(i<=t)
+	{
+		cin>>n>>k>>p;
+		if(n==p)
+		cout<<"Case "<<i<<": "<<k;
+	
+		else
+		{
+				int arr[200];
+			for(int a=0;a<n;a++)
+			{                             // Case 1: 2
+				arr[a]=a+1;
+			}
+			int m=arr[(k+p-1)%n];
+			cout<<"Case "<<i<<": "<<m;
+		}
+			
+		
+		
+	   	i++;cout<<endl;
+	}
+	
+	return 0;
+}

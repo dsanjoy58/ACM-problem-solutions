@@ -1,0 +1,24 @@
+#include <iostream>
+#include <math.h>
+#include <stdio.h>
+#include <algorithm>
+#define PI 3.141592653589793238462643383279502884197
+using namespace std;
+int main()
+{
+        	  double a[3];
+	while(cin>>a[0]>>a[1]>>a[2])
+	{
+		sort(a,a+3);
+	    double s=(a[0]+a[1]+a[2])/2,A=sqrt(s*(s-a[0])*(s-a[1])*(s-a[2])),r=2*A/(a[0]+a[1]+a[2]),R=(a[0]*a[1]*a[2]/(4*A));
+		
+		
+		printf("%.4lf %.4lf %.4lf",PI*R*R-A,A-PI*r*r,PI*r*r);
+		
+		
+		cout<<endl;
+	}
+	
+	
+	return 0;
+}

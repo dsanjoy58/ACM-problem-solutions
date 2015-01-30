@@ -1,0 +1,36 @@
+#include <iostream>
+#include <stdio.h>
+#include <algorithm>
+int a[1000000];
+using namespace std;
+int main()
+{
+	 int n,i=0;
+	cin>>n;
+	while(i<n)
+	{
+		 long int k,sum=0;
+		cin>>k;
+		for(long int j=0;j<k;j++)
+		{
+		cin>>a[j];
+		sum=sum+a[j];
+		
+		}
+		sum=sum/k;
+	//	cout<<sum<<endl;
+		sort(a,a+k);
+		long int count=0,s=0;
+		for(count=k-1;a[count]>sum;count--)
+		{
+			s++;
+		}
+	//	cout<<s<<endl;
+      		double m=s,q=k;
+		printf("%.3f%%\n",(m/q)*100);
+		i++;
+	}
+	
+	
+	return 0; 
+}

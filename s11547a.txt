@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+
+int main()
+{
+ int t;
+ cin>>t;
+ long int tot;
+ int i=0,n;
+ while(i<t)
+ {    int x;
+     cin>>n;
+     tot=(n*567/9+7492)*235/47-498;
+
+    x=(int)(tot/10)%10;
+    if(x<0)
+    cout<<(-x);
+    else
+    cout<<x;
+
+
+   i++;cout<<endl;
+ }
+
+
+
+
+
+  return 0;
+
+}
